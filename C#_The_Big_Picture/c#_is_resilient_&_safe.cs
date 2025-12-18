@@ -29,15 +29,23 @@ class Program
     {
         // Declara um array de inteiros com valores de 1 a 5
         var numbers = new int[] { 1, 2, 3, 4, 5 };
+
+        //Aqui ele ira procurar numeros para somar, caso não encontre ele retorna 0
+        var sum = numbers.Aggregate(
+            0,
+            (total, num) => total + num
+        );
         // Inicializa a variável sum com 0
-        var sum = 0;
+        //var sum = 0;
         
         // Loop que soma cada elemento do array
-        for (var n = 0; n < numbers.Length; n++)
-        {
+        //for (var n = 0; n < numbers.Length; n++)
+        //{
             // Adiciona o valor atual do array à soma
-            sum += numbers[n];
-        }
+           // sum += numbers[n];
+       // }*/
+
+
         
         // Imprime a soma total no console
         Console.WriteLine(sum);
