@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samue\\OneDrive\\Documentos\\c#\\Aula07\\Aula07.csproj": {}
+    "C:\\Users\\samue\\OneDrive\\Documentos\\c#\\aula07\\Aula07.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samue\\OneDrive\\Documentos\\c#\\Aula07\\Aula07.csproj": {
+    "C:\\Users\\samue\\OneDrive\\Documentos\\c#\\aula07\\Aula07.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samue\\OneDrive\\Documentos\\c#\\Aula07\\Aula07.csproj",
+        "projectUniqueName": "C:\\Users\\samue\\OneDrive\\Documentos\\c#\\aula07\\Aula07.csproj",
         "projectName": "Aula07",
-        "projectPath": "C:\\Users\\samue\\OneDrive\\Documentos\\c#\\Aula07\\Aula07.csproj",
+        "projectPath": "C:\\Users\\samue\\OneDrive\\Documentos\\c#\\aula07\\Aula07.csproj",
         "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samue\\OneDrive\\Documentos\\c#\\Aula07\\obj\\",
+        "outputPath": "C:\\Users\\samue\\OneDrive\\Documentos\\c#\\aula07\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
