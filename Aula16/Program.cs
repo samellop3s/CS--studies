@@ -6,6 +6,14 @@ namespace Aula15
     {
         static void Main(string[] args)
         {
+
+            //Goto serve para desviar o fluxo de execução do programa para um ponto específico
+            //do código identificado por um rótulo (label).
+
+            inicio: 
+            Console.Clear();
+            Console.WriteLine("Bem-vindo ao sistema de escolha de viagem!");
+
             //o SWITCH CASE é uma estrtura condicional que permite testar uma variável
             //contra vários valores possíveis, executando o bloco de código correspondente
 
@@ -69,6 +77,16 @@ namespace Aula15
                         Console.WriteLine("Opção inválida. Por favor, escolha uma letra entre a, b, c ou d.");
                         break;
                 }
+            }   
+                Console.WriteLine("Deseja fazer outra viagem? (s/n)");
+                escolha = char.Parse(Console.ReadLine());
+                if (escolha == 's' || escolha == 'S'){
+                    goto inicio;
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("Obrigado por usar o sistema de escolha de viagem! Boa viagem!");
             }
         }
     }
