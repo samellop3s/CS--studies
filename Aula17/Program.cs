@@ -9,7 +9,7 @@ namespace Aula17
         static void Main(string[] args)
         {
 
-            //Arrays / vetores
+           /* //Arrays / vetores
             int[] n = new int[5];
 
             //int[] num = new int[3]{55, 65, 75};
@@ -77,10 +77,7 @@ namespace Aula17
 
             //3°
 
-            string[] frutas = { "Maçã", "Banana", "Laranja", "Uva", "Abacaxi" };
-            /*Crie um vetor de 6 números inteiros.
-
-Objetivos:
+/*Objetivos:
 
 Mostrar o vetor original
 
@@ -88,7 +85,40 @@ Mostrar o vetor invertido (do último pro primeiro)
 
 Exemplo:
 Entrada: [1, 2, 3, 4, 5, 6]
-Saída invertida: [6, 5, 4, 3, 2, 1]*/
+Saída invertida: [6, 5, 4, 3, 2, 1]
+
+            int [] numeros = {1, 2, 3, 4, 5, 6};
+
+            //vetor original
+            Console.Write("Vetor original: ");
+            for (int i = 0; i < numeros.Length; i++) //o Length pega o tamanho do array
+            {
+                Console.Write(numeros[i] + " ");
+            }
+
+            Console.WriteLine();
+
+            //vetor invertido
+            Console.Write("Vetor invertido: ");
+            for (int i = numeros.Length - 1; i >= 0; i--)
+            {
+                Console.Write(numeros[i] + " ");
+            }*/
+
+            int [] test = {1, 2, 3, 4, 5, 6};
+
+            Console.Write("Vetor original: ");
+            for (int i = 0; i < test.Length; i++)
+            {
+                Console.Write(test[i] + " ");
+            } //o i significa que iria iniciar do 0 e ler o array por inteiro.
+                Console.WriteLine();
+
+            Console.Write("Vetor invertido: ");
+            for (int i = test.Length - 1; i >= 0; i--)//nesta situação o i está iniciando do tamanho do array -1, ou seja, do último elemento.
+            {
+                Console.Write(test[i] + " ");
+            } 
         }
     }
 }
