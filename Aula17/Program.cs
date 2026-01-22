@@ -132,12 +132,28 @@ Saída invertida: [6, 5, 4, 3, 2, 1]
                 Console.Write(number[i] + " "); //aqui esta sendo impresso o valo completo do array.
             }*/
 
-            int [] valor = {10, 20, 30, 40, 50, 60};//aqui esta sendo criado um array com 6 posições, cada um com seu valor.
+            /*int [] valor = {10, 20, 30, 40, 50, 60};//aqui esta sendo criado um array com 6 posições, cada um com seu valor.
 
             Console.Write("\nVetores invertidos: ");
             for (int i = valor.Length - 1; i >= 0; i--) //aqui o i está iniciando do tamanho do array -1, ou seja, do último elemento.
             {
                 Console.WriteLine(valor[i] + " "); //aqui esta sendo impresso o valor completo do array.
+            }*/
+
+            int [] valor = {10, 20, 30, 40, 50, 60};
+
+            Console.Write("Vetores: ");
+            for(int i = 0; i<valor.Length; i++)
+            {
+                Console.Write(valor[i] + " ");
+            }
+
+            Console.WriteLine();
+
+            Console.Write("Vetores ao contrario: ");
+            for(int i = valor.Length -1; i >=0; i--)
+            {
+                Console.Write(valor[i] + " ");
             }
         }
     }
