@@ -11,6 +11,7 @@ namespace Aula19
             {
                 //apos fazer a contagem e chegar no valor correto, vai encerrar o loop e fazer a impressao completa.
                 Console.WriteLine("CFB cursos");
+                break;//comando para sair do loop
             }
         }
     }
