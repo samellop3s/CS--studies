@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Aula19
 {
@@ -55,6 +56,27 @@ namespace Aula19
             }
 
             Console.Write("==============================\n");
+
+            int [] valores = {1, 2, 3, 4, 5};
+
+            Console.WriteLine("caçando o valor");
+            Console.WriteLine();
+            bool caçada = false;
+
+            foreach(int caça in valores)
+            {
+                if (caça == 3)
+                {
+                    caçada = true;
+                    break;
+                }
+            }
+            if (caçada){
+                Console.Write("vc encontrou a presa!!!");
+            }else
+            {
+                Console.Write("continue tentando");
+            }
         }
     }
 }
