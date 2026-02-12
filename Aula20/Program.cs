@@ -6,17 +6,15 @@ namespace AppTest
     {
         static void Main(string[] args)
         {
-            int [] number = new int [10];
-
-            for(int i = 0; i<number.Length; i++)
+            int[] number = new int[10];
+            int i = 0;
+            while (i<number.Length)
             {
-                number[i]=i;
+                number[i]=0;
+                Console.WriteLine(number[i]);
+                i++;
             }
-
-            for(int i=0; i<number.Length; i++)
-            {
-                Console.WriteLine("Valor de num na pos{0}: {1}",i,number[i]);
-            }
+            Console.WriteLine("Fim do loop");
         }
     }
 }
