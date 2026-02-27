@@ -15,11 +15,16 @@ namespace AppAula
            /* for(int i = 0; i<number.Length; i++) ele fara a incialização da funcao 
             {
                 Console.Write(number[i] + " ");
-            }*/
+            }
 
             foreach(int n in number) // ja aq fara a leitura
             {
                 Console.Write(n + " ") ;
+            }*/
+
+            foreach(int carvalho in number)
+            {
+                Console.WriteLine(carvalho);
             }
         }
     }
