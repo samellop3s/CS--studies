@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Globalization;
+
 
 class Aula22
 {
@@ -12,4 +12,4 @@ class Aula22
             Console.WriteLine(n);
         }
     }
-}
+}  
