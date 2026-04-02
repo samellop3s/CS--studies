@@ -1,31 +1,15 @@
 ﻿using System;
+using System.Globalization;
 
-namespace AppAula
+class Aula22
 {
-    class Aula22 {
-        static void Main(string[] args)
+    static void Main(string[] args)
+    {
+        int [] num = new int[3]{11,22,55}; 
+
+       foreach(int n in num)
         {
-            //AUla sobre loop foreach
-
-            //enquanto o loop for faz a inicialização 
-            //o foreach faz a leitura 
-
-            int[] number = new int [3] {12,55,33};
-
-           /* for(int i = 0; i<number.Length; i++) ele fara a incialização da funcao 
-            {
-                Console.Write(number[i] + " ");
-            }
-
-            foreach(int n in number) // ja aq fara a leitura
-            {
-                Console.Write(n + " ") ;
-            }*/
-
-            foreach(int carvalho in number)
-            {
-                Console.WriteLine(carvalho);
-            }
+            Console.WriteLine(n);
         }
     }
 }
