@@ -7,6 +7,7 @@ namespace Test
         static void Main()
         {
             Numbers(10, 36); //este metodo esta recebendo os valores do numero
+            //proximo metodo a ser testado sera com valores direto do teclado.
         }
 
         static void Numbers(int n1, int n2)
