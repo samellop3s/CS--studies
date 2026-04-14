@@ -6,12 +6,13 @@ namespace Test
     {
         static void Main()
         {
-            Hellow();
+            Numbers(10, 36); //este metodo esta recebendo os valores do numero
         }
 
-        static void Hellow()
+        static void Numbers(int n1, int n2)
         {
-            Console.Write("Hellow word!");
+            int res = (n1 + n2);
+            Console.Write("A soma de {0} + {1} é igual a {2}", n1, n2, res);//aqui sera impresso tanto a mensagem quanto o valor da soma
         }
     }
 }
