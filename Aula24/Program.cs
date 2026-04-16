@@ -4,7 +4,7 @@ namespace Test
 {
     class Aula24
     {
-        static void Main()
+       /* static void Main()
         {
             Numbers(10, 36); //este metodo esta recebendo os valores do numero
             //proximo metodo a ser testado sera com valores direto do teclado.
@@ -14,6 +14,16 @@ namespace Test
         {
             int res = (n1 + n2);
             Console.Write("A soma de {0} + {1} é igual a {2}", n1, n2, res);//aqui sera impresso tanto a mensagem quanto o valor da soma
+        }*/
+
+        static void Main()
+        {
+            
+        }
+
+        static void Numbers(int v1, int v2)
+        {
+            
         }
     }
 }
