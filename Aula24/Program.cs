@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace Test
 {
@@ -17,13 +18,16 @@ namespace Test
         }*/
 
         static void Main()
-        {
-            
+        { 
+            int v1 = Convert.ToInt32(Console.ReadLine());//aqui será a entrada dos valores vindo direto do teclado e sendo convertido.
+            int v2 = Convert.ToInt32(Console.ReadLine());
+            Numbers(v1, v2);//aqui esta sendo chamada as variaveis.
         }
 
         static void Numbers(int v1, int v2)
         {
-            
+            int result = v1 + v2;
+            Console.WriteLine($"A soma entre {v1} + {v2} é igual a {result}");
         }
     }
 }
