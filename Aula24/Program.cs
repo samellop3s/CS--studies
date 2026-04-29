@@ -1,5 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Globalization;
+using System.Runtime.InteropServices;
 
 namespace Test
 {
@@ -18,16 +20,16 @@ namespace Test
         }*/
 
         static void Main()
-        { 
-            int v1 = Convert.ToInt32(Console.ReadLine());//aqui será a entrada dos valores vindo direto do teclado e sendo convertido.
-            int v2 = Convert.ToInt32(Console.ReadLine());
-            Numbers(v1, v2);//aqui esta sendo chamada as variaveis.
+        {
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            Numbers(num1, num2);
         }
 
-        static void Numbers(int v1, int v2)
+        static void Numbers(int num1, int num2)
         {
-            int result = v1 + v2;
-            Console.WriteLine($"A soma entre {v1} + {v2} é igual a {result}");
+            int soma = num1 + num2;
+            Console.WriteLine($"O resultado da soma entre {0} + {1} é igual a {2}", num1, num2, soma);
         }
     }
 }
