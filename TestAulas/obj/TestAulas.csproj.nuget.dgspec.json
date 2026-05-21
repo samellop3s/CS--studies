@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Win10\\Documents\\CS--studies\\TestAulas\\TestAulas.csproj": {}
+    "C:\\Users\\Win10\\Documents\\CS--studies\\testaulas\\TestAulas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Win10\\Documents\\CS--studies\\TestAulas\\TestAulas.csproj": {
+    "C:\\Users\\Win10\\Documents\\CS--studies\\testaulas\\TestAulas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win10\\Documents\\CS--studies\\TestAulas\\TestAulas.csproj",
+        "projectUniqueName": "C:\\Users\\Win10\\Documents\\CS--studies\\testaulas\\TestAulas.csproj",
         "projectName": "TestAulas",
-        "projectPath": "C:\\Users\\Win10\\Documents\\CS--studies\\TestAulas\\TestAulas.csproj",
+        "projectPath": "C:\\Users\\Win10\\Documents\\CS--studies\\testaulas\\TestAulas.csproj",
         "packagesPath": "C:\\Users\\Win10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win10\\Documents\\CS--studies\\TestAulas\\obj\\",
+        "outputPath": "C:\\Users\\Win10\\Documents\\CS--studies\\testaulas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -3,8 +3,17 @@
 class Program {
     static void Main()
     {
-        Console.WriteLine("Qual fruta o chico gosta: ");
-        String fruta = Console.ReadLine();
+        
+        string fruta;
+
+        do {
+            Console.WriteLine("Qual fruta o chico gosta: ");
+            fruta = Console.ReadLine();
+
+            if(!ApenasLetra(fruta)){
+                Console.WriteLine("ERRO: Digite apenas letras!");
+            }
+        }while(!ApenasLetra(fruta));
 
         Console.WriteLine($"Quantas {fruta} o chico comeu pela manhã: ");
         double number1 = Convert.ToDouble(Console.ReadLine());
@@ -15,15 +24,26 @@ class Program {
         Console.WriteLine($"Quantas {fruta} o chico comeu na janta: ");
         double number3 = Convert.ToDouble(Console.ReadLine());
 
-        double alimento = QuantidadeDeGoiaba(number1, number2, number3);
+        double alimento = QuantidadeDeFruta(number1, number2, number3);
 
         string situacao = SituacaoDoChico(alimento);
 
-        Console.WriteLine($"O chico gosta de:{fruta} \nqual foi a quantidade que ele comeu ao longo do dia?: {alimento} \nqual a situação do chico?: {situacao}");
+        Console.WriteLine($"O chico gosta de: {fruta} \nqual foi a quantidade que ele comeu ao longo do dia?: {alimento} \nqual a situação do chico?: {situacao}");
 
     }
 
-    static double QuantidadeDeGoiaba(double number1, double number2, double number3)
+    static bool ApenasLetra(string texto){
+        foreach (char c in texto)
+        {
+            if(!char.IsLetter(c)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    static double QuantidadeDeFruta(double number1, double number2, double number3)
     {
         return (number1 + number2 + number3);
     }
