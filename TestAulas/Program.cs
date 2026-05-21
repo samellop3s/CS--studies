@@ -1,6 +1,7 @@
 ﻿using System;
 
-class Program {
+class Program
+{
     static void Main()
     {
         Console.WriteLine("Qual fruta o chico gosta: ");
@@ -38,7 +39,8 @@ class Program {
         {
             return "Chico esta sentindo algumas dores na barriga";
         }
-        else {
+        else
+        {
             return "Chico precisa muito de um banheiro!!!!";
         }
     }
