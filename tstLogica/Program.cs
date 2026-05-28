@@ -5,48 +5,32 @@ namespace TestProgram
     class Program
     {
         static void Main()
-        {   //variavel que ira armazenar o valor
-            string name;
+        {
+         string name;
+
             do
             {
-                Console.WriteLine("Whats your name?");
-                name = Console.ReadLine()!; // aqui será entregue o valor vindo do teclado
+                Console.WriteLine("Favor inserir seu nome: ");
+                name = Console.ReadLine();
 
-                if (!ApenasLetra(name))
+                if (!ApenasLetras(name))//esta fazendo a chamada do metodo pra validação da entrada do valor;
                 {
-                    Console.WriteLine("ERRO! favor inserir somente letras");
+                    Console.WriteLine("ERRO! favor digitar corretamente");
                 }
-            }while(!ApenasLetra(name));
+            }while(!ApenasLetras(name));
         }
-          /*
-        Método responsável por validar se o texto contém apenas letras.
 
-        foreach:
-        Percorre caractere por caractere da string.
-
-        char.IsLetter(c):
-        Verifica se o caractere atual é uma letra.
-
-        c != ' ':
-        Permite espaços no texto.
-        Exemplo: "maça verde"
-
-        return false:
-        Caso encontre números ou símbolos.
-
-        return true:
-        Caso toda a string seja válida.
-    */
-        static bool ApenasLetra(string texto)
+        static bool ApenasLetras(string texto)
         {
-            foreach (char c in texto)
+            foreach(char c in texto)//fara a leitura completa do valor que sera entregue;
             {
-                if (!char.IsLetter(c) && c != ' ')
+                if(!char.IsLetter(c) && c != ' ')//o char vai fazer a verificação pra ver se o caracter é uma letra;
                 {
                     return false;
                 }
             }
             return true;
         }
+        
     }
 }
