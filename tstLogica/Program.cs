@@ -10,21 +10,21 @@ namespace TestProgram
 
             do
             {
-                Console.WriteLine("Favor inserir seu nome: ");
+                Console.WriteLine("Favor informar seu nome: ");
                 name = Console.ReadLine();
 
-                if (!ApenasLetras(name))//esta fazendo a chamada do metodo pra validação da entrada do valor;
+                if (!ApenasLetras(name))
                 {
-                    Console.WriteLine("ERRO! favor digitar corretamente");
+                    Console.WriteLine("ERRO! favor inserir novamente (apenas letras)");
                 }
             }while(!ApenasLetras(name));
         }
 
         static bool ApenasLetras(string texto)
         {
-            foreach(char c in texto)//fara a leitura completa do valor que sera entregue;
+            foreach(char c in texto)
             {
-                if(!char.IsLetter(c) && c != ' ')//o char vai fazer a verificação pra ver se o caracter é uma letra;
+                if(!char.IsLetter(c) && c != ' ')
                 {
                     return false;
                 }
