@@ -1,36 +1,24 @@
 ﻿using System;
 
-namespace TestProgram
+
+namespace tstLogica
 {
     class Program
     {
         static void Main()
         {
-         string name;
 
-            do
-            {
-                Console.WriteLine("Favor informar seu nome: ");
-                name = Console.ReadLine(); //vai receber o valor desejado pelo teclado
+            Console.WriteLine("Informe o 1º numero: ");
+            int number1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Informe o 2º numero: ");
+            int number2 = Convert.ToInt32(Console.ReadLine());
 
-                if (!ApenasLetras(name)) //logo caira em um if para ser verificador se o valor é valido ou nao, caso seja valido ele ira para o proximo passo, caso seja invalido ele ira mostrar a mensagem de erro e pedir para inserir novamente
-                {
-                    Console.WriteLine("ERRO! favor inserir novamente (apenas letras)");//mensagem de erro caso o valor seja invalido
-                }
-            }while(!ApenasLetras(name));
+            int result = SomaNumbers(number1, number2);
+            Console.WriteLine($"O resultado da soma entre {number1} + {number2} = {result}");
         }
-
-        static bool ApenasLetras(string texto)
+        static int SomaNumbers(int number1, int number2)
         {
-            foreach(char c in texto)
-            {
-                if(!char.IsLetter(c) && c != ' ')
-                {
-                    return false;
-                }
-            }
-            return true;
+            return number1 + number2;
         }
-        
     }
 }
