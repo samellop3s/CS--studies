@@ -23,6 +23,20 @@ namespace tstLogica
 
             string resultado = ParOuImpar(value);
             Console.WriteLine($"o {value} é um número {resultado}");
+
+            //MAIOR ENTRE 3 NUMEROS
+
+            Console.WriteLine("Digite o primeiro numero: ");
+            int valor1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite o segundo numero: ");
+            int valor2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite o terceiro numero: ");
+            int valor3 = Convert.ToInt32(Console.ReadLine());
+
+            string resumo = MaiorEntreOsTres(valor1, valor2, valor3);
+            Console.WriteLine($"O valor: {resumo}");
         }
         static int SomaNumbers(int number1, int number2)
         {
@@ -38,6 +52,20 @@ namespace tstLogica
             }else
             {
                 return "é impar";   
+            }
+        }
+
+        static string MaiorEntreOsTres(int valor1, int valor2, int valor3)
+        {
+            if(valor1 > valor2 && valor1 > valor3)
+            {
+                return "valor1 é maior" ;
+            }else if(valor2 > valor1 && valor2 > valor3)
+            {
+                return "valor2 é maior";
+            }else
+            {
+                return "valor3 é maior";
             }
         }
     }
