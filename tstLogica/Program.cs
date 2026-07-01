@@ -48,7 +48,7 @@ namespace tstLogica
 
             Console.WriteLine("Selecione uma operação:");
             Console.WriteLine("1 - soma; \n2 - subtração; \n3 - divisao \n4 - multiplicação");
-            int operacao = Console.ReadLine();
+            int operacao = Convert.ToInt32(Console.ReadLine());
 
             switch (operacao)
             {
