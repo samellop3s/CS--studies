@@ -12,6 +12,8 @@ class Program
     }
     static int Soma(int number1, int number2)
     {
-        return number1 + number2;
+        int res = number1 + number2;
+        return res;
     }
 }
+  
